@@ -1,0 +1,52 @@
+package in.ineuron.model;
+
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import ch.qos.logback.core.subst.Token.Type;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@NoArgsConstructor
+@RequiredArgsConstructor
+@ToString
+@Entity
+@Table(name = "OTM_Person")
+public class Person {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer pid;
+	@NonNull
+	private String name;
+	@NonNull
+	private String address;
+	
+	@OneToMany(targetEntity = PhoneNumber.class, cascade = CascadeType.ALL, mappedBy = "person",fetch = FetchType.EAGER)
+//	@JoinColumn(name="PERSON_ID" ,referencedColumnName = "pid")
+	private Set<PhoneNumber> contactDetails;
+
+	
+	
+	
+
+}

@@ -1,0 +1,19 @@
+{
+	"id": 12,
+	"firstName": "Salam",
+	"lastName": "Ansari",
+	"active": false,
+	"address": {
+		"street": "Barkat Ali Road",
+		"city": "Mumbai",
+		"state": "Maharashtra",
+		"zip": "400037",
+		"country": "India"
+	},
+	"languages": [
+		"C#",
+		"Java",
+		"Servlet",
+		".Net"
+	]
+}

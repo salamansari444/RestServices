@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringRest-20-DataJpa-MultipleDbConfiguration"/>
+<aop-project name="SpringRest-11-ConsumerApp"/>
+<aop-project name="SpringRest-15-TicketBooking-ProviderApp"/>
+<aop-project name="SpringRest-14-WebClient-GetRequest"/>
+<aop-project name="SpringRest-18-H2-DataJpa"/>
+<aop-project name="SpringRest-10-providerApp"/>
+<aop-project name="SpringRest-16-WebClient-PostRequest"/>
+<aop-project name="SpringRest-09-TicketManagementErrorUsingSwagger"/>
+<aop-project name="SpringRest-19-PostgreSQL-DataJpa"/>
+<aop-project name="SpringRest-13-CurrencyConverter-ProviderApp"/>
+<aop-project name="SpringRest-02-DifferentMethodPOC"/>
+<aop-project name="SpringRest-06-JsonApp"/>
+<aop-project name="SpringRest-07-TicketManagementApp"/>
+<aop-project name="SpringRest-21-DataJpa-OnetoManyBidirectional"/>
+<aop-project name="SpringRest-12-ConsumerAppUsingExchangeMethod"/>
+<aop-project name="SpringRest-17-Hateos-App"/>
+<aop-project name="SpringRest-03-QueryStringPOC"/>
+<aop-project name="SpringRest-08-TicketManagementErrorResponseApp"/>
+<aop-project name="SpringRest-01-SimplePOC"/>
+</aop-reference-model>

@@ -1,0 +1,43 @@
+package in.ineuron.runner;
+
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import in.ineuron.model.Person;
+import in.ineuron.model.PhoneNumber;
+import in.ineuron.service.IPersonPhoneMngmtService;
+
+@Component
+public class AssociateRunner implements CommandLineRunner {
+	
+	@Autowired
+	private IPersonPhoneMngmtService service;
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		//created Parent Object
+		Person person = new Person("Salam", "CSK");
+		
+		//created child object
+		PhoneNumber p1 = new PhoneNumber(8291255014L, "Jio", "Personal");
+		PhoneNumber p2 = new PhoneNumber(9081255914L, "Airtel", "Official");
+		
+		//link parent to child
+//		p1.setPerson(person);
+//		p2.setPerson(person);
+		
+		
+		Set<PhoneNumber> contactDetail = Set.of(p1,p2);
+		//link child to parent
+		person.setContactDetails(contactDetail);
+		
+		String status = service.savePerson(person);
+		System.out.println(status);
+
+	}
+
+}

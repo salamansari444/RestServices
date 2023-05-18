@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;in.ineuron.runnner&apos; to &apos;in.ineuron.controller&apos;&#x0D;&#x0A;- Original project: &apos;SpringRest-10-providerApp&apos;&#x0D;&#x0A;- Original element: &apos;SpringRest-10-providerApp/src/main/java/in.ineuron.runnner&apos;&#x0D;&#x0A;- Renamed element: &apos;SpringRest-10-providerApp/src/main/java/in.ineuron.controller&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;in.ineuron.runnner&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ineuron.runnner" name="in.ineuron.controller" qualified="false" references="true" stamp="1683030999456" textual="false" version="1.0"/>
+</session>
